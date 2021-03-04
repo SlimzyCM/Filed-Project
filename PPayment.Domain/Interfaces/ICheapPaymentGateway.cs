@@ -9,6 +9,6 @@ namespace PPayment.Domain.Interfaces
     /// <summary>
     /// implements the payment services 
     /// </summary>
-    internal interface ICheapPaymentGateway : IPaymentGateway
+    public interface ICheapPaymentGateway : IPaymentGateway
     { }
 }
