@@ -14,7 +14,7 @@ The response of this method are of the followings based on
 - Any error: 500 internal server error
 - The request should be validated before processed.
 
-</hr>
+<hr />
 
 The payment can be processed using different payment providers (external services) called:
 - IExpensivePaymentGateway or
@@ -32,7 +32,7 @@ does not get processed </li>
 completed.
  <ol/>
    
-</hr>
+<hr />
   
 Implementation Pattern:
 - Repository/unit of work patterns
