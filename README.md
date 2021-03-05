@@ -19,17 +19,14 @@ The response of this method are of the followings based on
 The payment can be processed using different payment providers (external services) called:
 - IExpensivePaymentGateway or
 - ICheapPaymentGateway.
-<p>The payment gateway that should be used to process each payment follows the next set of business
+<p>The payment gateway used to process each payment follows the next set of business
 rules: </p>
 <ol>
    
-<li>If the amount to be paid is less than £20, use ICheapPaymentGateway. </li>
-<li>If the amount to be paid is £21-500, use IExpensivePaymentGateway if available. Otherwise, retry
-only once with ICheapPaymentGateway. </li>
-<li>If the amount is > £500, try only PremiumPaymentService and retry up to 3 times in case payment
-does not get processed </li>
-<li>Store/update the payment and payment state entities created previously once the processing is
-completed.
+<li>If the amount to be paid is less than £20, ICheapPaymentGateway is used </li>
+<li>If the amount to be paid is £21-500, IExpensivePaymentGateway used if available. Otherwise, retries only once with ICheapPaymentGateway. </li>
+<li>If the amount is > £500, uses only PremiumPaymentService and retries up to 3 times in case payment does not get processed </li>
+<li> the payment is Store/update once the processing is completed.
  <ol/>
    
 <hr />
