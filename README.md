@@ -31,7 +31,8 @@ does not get processed </li>
 <li>Store/update the payment and payment state entities created previously once the processing is
 completed.
  <ol/>
-<hr/>
+   
+</hr>
   
 Implementation Pattern:
 - Repository/unit of work patterns
