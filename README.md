@@ -16,9 +16,6 @@ The response of this method are of the followings based on
 
 <hr />
 
-The payment can be processed using different payment providers (external services) called:
-- IExpensivePaymentGateway or
-- ICheapPaymentGateway.
 <p>The payment gateway used to process each payment follows the next set of business
 rules: </p>
 <ol>
